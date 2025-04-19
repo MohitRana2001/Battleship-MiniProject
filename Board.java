@@ -52,18 +52,20 @@ public class Board {
         System.out.println();
 
         for (int r = 0; r < 10; r++) {
-            System.out.printf("%c |", 'A' + r); // row‑label + left bar
+            System.out.printf("%c |", 'A' + r);
             for (int c = 0; c < 10; c++) {
                 char ch = grid[r][c];
                 if (hideShips && ch == 'S') {
-                    ch = ' '; // hide ships
+                    ch = ' ';
                 } else if (ch == '\0') {
-                    ch = ' '; // empty cells as blank
+                    ch = ' ';
                 }
-                System.out.printf(" %c ", ch); // width=3, so everything lines up
+                System.out.printf(" %c ", ch);
             }
-            System.out.println("|"); // trailing bar + newline
+            System.out.println("|");
         }
+
+        System.out.println();
     }
 
     private static boolean out(int r, int c) {
