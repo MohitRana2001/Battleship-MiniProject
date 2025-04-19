@@ -21,16 +21,17 @@ public class HumanPlayer extends Player {
 
         for (Ship s : fleet) {
             while (true) {
-                System.out.printf("Enter bow coordinate & direction (H/V) for %s (len=%d)", s.getName(),
+                System.out.printf("Enter bow coordinate & direction (H/V) for %s (len=%d), e.g. \"B7 H\": ",
+                        s.getName(),
                         s.getLength());
                 String line = scanner.nextLine().trim().toUpperCase();
 
-                if (!line.matches("[A-J](10|[1-9])\\s+[HV]")) {
-                    System.out.println("Invalid.");
+                if (!line.matches("^[A-J]([1-9]|10)\\s+[HV]$")) {
+                    System.out.println("must be LETTER(A-J) + 1-10, space, then H or V");
                     continue;
                 }
 
-                String[] parts = line.split("//s+");
+                String[] parts = line.split("\\s+");
                 Coordinate bow = GameHelper.parseCoordinate(parts[0]);
                 boolean horiz = parts[1].equals("H");
                 if (board.placeShip(s, bow, horiz))
@@ -55,8 +56,8 @@ public class HumanPlayer extends Player {
             Coordinate c = GameHelper.parseCoordinate(in);
             if (c.isOutofBounds()) {
                 System.out.println("Out of bounds.");
-                return c;
             }
+            return c;
         }
     }
 }
