@@ -26,17 +26,17 @@ java Game
 
 ## 🎮 How to Play
 
-### 📝 Enter Player Names
+### 1. 📝 Enter Player Names
 
 - You’ll be prompted to enter Player 1’s name.
 
 - Choose whether to play against the computer:
 
-### Enter Y for Computer opponent.
+- Enter Y for Computer opponent.
 
 - Enter N and provide Player 2’s name for human opponent.
 
-### ⚓ Ship Placement
+### 2. ⚓ Ship Placement
 
 - You have two options for placing your ships:
 
@@ -44,7 +44,7 @@ java Game
 
 - Manual Placement
 
-### 📍 Manual Placement Format:
+### 3. 📍 Manual Placement Format:
 
 ```bash
 <Letter><Number> <H|V>
