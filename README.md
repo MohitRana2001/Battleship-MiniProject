@@ -26,34 +26,37 @@ java Game
 
 ## 🎮 How to Play
 
-###📝 Enter Player Names
+### 📝 Enter Player Names
 
-You’ll be prompted to enter Player 1’s name.
+- You’ll be prompted to enter Player 1’s name.
 
-Choose whether to play against the computer:
+- Choose whether to play against the computer:
 
-###Enter Y for Computer opponent.
+### Enter Y for Computer opponent.
 
-Enter N and provide Player 2’s name for human opponent.
+- Enter N and provide Player 2’s name for human opponent.
 
-⚓ Ship Placement
-You have two options for placing your ships:
+### ⚓ Ship Placement
 
-Automatic Placement (random positions)
+- You have two options for placing your ships:
 
-Manual Placement
+- Automatic Placement (random positions)
 
-📍 Manual Placement Format:
-plaintext
-Copy
-Edit
+- Manual Placement
+
+### 📍 Manual Placement Format:
+
+```bash
 <Letter><Number> <H|V>
-Letter: Row (A–J)
+```
 
-Number: Column (1–10)
+- Letter: Row (A–J)
 
-H: Horizontal (→)
-V: Vertical (↓)
+- Number: Column (1–10)
+
+- H: Horizontal (→)
+
+- V: Vertical (↓)
 
 ## 🧩 OOP Principles Applied
 
